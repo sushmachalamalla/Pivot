@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD60A77B9818B8B0E48A4CC4 /* libPods-Pivot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED51A23BCF6F7EF750AE0A96 /* libPods-Pivot.a */; };
 		FC3297721BB1ED70005AF475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3297711BB1ED70005AF475 /* main.m */; };
 		FC3297751BB1ED70005AF475 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3297741BB1ED70005AF475 /* AppDelegate.m */; };
 		FC3297781BB1ED70005AF475 /* Pivot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC3297761BB1ED70005AF475 /* Pivot.xcdatamodeld */; };
@@ -15,6 +16,9 @@
 		FC3297801BB1ED70005AF475 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC32977F1BB1ED70005AF475 /* Images.xcassets */; };
 		FC3297831BB1ED70005AF475 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3297811BB1ED70005AF475 /* LaunchScreen.xib */; };
 		FC32978F1BB1ED70005AF475 /* PivotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC32978E1BB1ED70005AF475 /* PivotTests.m */; };
+		FCDDA8ED1BB33FF2007C5EC2 /* SignUpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDDA8EC1BB33FF2007C5EC2 /* SignUpTableViewController.m */; };
+		FCDDA8F01BB358EB007C5EC2 /* SignInTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDDA8EF1BB358EB007C5EC2 /* SignInTableViewController.m */; };
+		FCDDA8F31BB37211007C5EC2 /* FireBaseAPIClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDDA8F21BB37211007C5EC2 /* FireBaseAPIClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3058A8FBDE6321381698D86F /* Pods-Pivot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pivot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pivot/Pods-Pivot.release.xcconfig"; sourceTree = "<group>"; };
+		9E4C5EE471A5FC4AE5A01BCC /* Pods-Pivot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pivot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pivot/Pods-Pivot.debug.xcconfig"; sourceTree = "<group>"; };
+		ED51A23BCF6F7EF750AE0A96 /* libPods-Pivot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pivot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC32976C1BB1ED70005AF475 /* Pivot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pivot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3297701BB1ED70005AF475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3297711BB1ED70005AF475 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +49,12 @@
 		FC3297881BB1ED70005AF475 /* PivotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PivotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC32978D1BB1ED70005AF475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC32978E1BB1ED70005AF475 /* PivotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PivotTests.m; sourceTree = "<group>"; };
+		FCDDA8EB1BB33FF2007C5EC2 /* SignUpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpTableViewController.h; sourceTree = "<group>"; };
+		FCDDA8EC1BB33FF2007C5EC2 /* SignUpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpTableViewController.m; sourceTree = "<group>"; };
+		FCDDA8EE1BB358EB007C5EC2 /* SignInTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInTableViewController.h; sourceTree = "<group>"; };
+		FCDDA8EF1BB358EB007C5EC2 /* SignInTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInTableViewController.m; sourceTree = "<group>"; };
+		FCDDA8F11BB37211007C5EC2 /* FireBaseAPIClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireBaseAPIClass.h; sourceTree = "<group>"; };
+		FCDDA8F21BB37211007C5EC2 /* FireBaseAPIClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireBaseAPIClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD60A77B9818B8B0E48A4CC4 /* libPods-Pivot.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +76,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3044CC1AF4D23552E86D72F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED51A23BCF6F7EF750AE0A96 /* libPods-Pivot.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38C614C3932C1CE92AB816A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E4C5EE471A5FC4AE5A01BCC /* Pods-Pivot.debug.xcconfig */,
+				3058A8FBDE6321381698D86F /* Pods-Pivot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC3297631BB1ED70005AF475 = {
 			isa = PBXGroup;
 			children = (
 				FC32976E1BB1ED70005AF475 /* Pivot */,
 				FC32978B1BB1ED70005AF475 /* PivotTests */,
 				FC32976D1BB1ED70005AF475 /* Products */,
+				38C614C3932C1CE92AB816A8 /* Pods */,
+				3044CC1AF4D23552E86D72F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,14 +116,10 @@
 		FC32976E1BB1ED70005AF475 /* Pivot */ = {
 			isa = PBXGroup;
 			children = (
-				FC3297731BB1ED70005AF475 /* AppDelegate.h */,
-				FC3297741BB1ED70005AF475 /* AppDelegate.m */,
-				FC3297791BB1ED70005AF475 /* ViewController.h */,
-				FC32977A1BB1ED70005AF475 /* ViewController.m */,
-				FC32977C1BB1ED70005AF475 /* Main.storyboard */,
-				FC32977F1BB1ED70005AF475 /* Images.xcassets */,
-				FC3297811BB1ED70005AF475 /* LaunchScreen.xib */,
-				FC3297761BB1ED70005AF475 /* Pivot.xcdatamodeld */,
+				FCDDA8E81BB30EFE007C5EC2 /* View */,
+				FCDDA8E71BB30EEF007C5EC2 /* Controller */,
+				FCDDA8E61BB30EE7007C5EC2 /* Model */,
+				FCDDA8EA1BB30F25007C5EC2 /* Resources */,
 				FC32976F1BB1ED70005AF475 /* Supporting Files */,
 			);
 			path = Pivot;
@@ -122,6 +151,48 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FCDDA8E61BB30EE7007C5EC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCDDA8F11BB37211007C5EC2 /* FireBaseAPIClass.h */,
+				FCDDA8F21BB37211007C5EC2 /* FireBaseAPIClass.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FCDDA8E71BB30EEF007C5EC2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC3297731BB1ED70005AF475 /* AppDelegate.h */,
+				FC3297791BB1ED70005AF475 /* ViewController.h */,
+				FC3297741BB1ED70005AF475 /* AppDelegate.m */,
+				FC32977A1BB1ED70005AF475 /* ViewController.m */,
+				FCDDA8EB1BB33FF2007C5EC2 /* SignUpTableViewController.h */,
+				FCDDA8EC1BB33FF2007C5EC2 /* SignUpTableViewController.m */,
+				FCDDA8EE1BB358EB007C5EC2 /* SignInTableViewController.h */,
+				FCDDA8EF1BB358EB007C5EC2 /* SignInTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FCDDA8E81BB30EFE007C5EC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC3297811BB1ED70005AF475 /* LaunchScreen.xib */,
+				FC32977C1BB1ED70005AF475 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FCDDA8EA1BB30F25007C5EC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC3297761BB1ED70005AF475 /* Pivot.xcdatamodeld */,
+				FC32977F1BB1ED70005AF475 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC3297921BB1ED70005AF475 /* Build configuration list for PBXNativeTarget "Pivot" */;
 			buildPhases = (
+				1A2F48691EC96D95D3D7DE0A /* Check Pods Manifest.lock */,
 				FC3297681BB1ED70005AF475 /* Sources */,
 				FC3297691BB1ED70005AF475 /* Frameworks */,
 				FC32976A1BB1ED70005AF475 /* Resources */,
+				ED45D2A836BF33B0637440AA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,14 +290,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A2F48691EC96D95D3D7DE0A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED45D2A836BF33B0637440AA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pivot/Pods-Pivot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC3297681BB1ED70005AF475 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FC3297781BB1ED70005AF475 /* Pivot.xcdatamodeld in Sources */,
+				FCDDA8F01BB358EB007C5EC2 /* SignInTableViewController.m in Sources */,
 				FC3297751BB1ED70005AF475 /* AppDelegate.m in Sources */,
+				FCDDA8F31BB37211007C5EC2 /* FireBaseAPIClass.m in Sources */,
 				FC32977B1BB1ED70005AF475 /* ViewController.m in Sources */,
+				FCDDA8ED1BB33FF2007C5EC2 /* SignUpTableViewController.m in Sources */,
 				FC3297721BB1ED70005AF475 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +458,7 @@
 		};
 		FC3297931BB1ED70005AF475 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4C5EE471A5FC4AE5A01BCC /* Pods-Pivot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pivot/Info.plist;
@@ -359,6 +469,7 @@
 		};
 		FC3297941BB1ED70005AF475 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3058A8FBDE6321381698D86F /* Pods-Pivot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pivot/Info.plist;
@@ -420,6 +531,7 @@
 				FC3297941BB1ED70005AF475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC3297951BB1ED70005AF475 /* Build configuration list for PBXNativeTarget "PivotTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +540,7 @@
 				FC3297971BB1ED70005AF475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
