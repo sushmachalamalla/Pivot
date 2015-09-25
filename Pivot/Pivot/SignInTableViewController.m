@@ -46,17 +46,25 @@
 
 - (IBAction)signInButton:(id)sender {
     
+    BOOL isValid;
     
-    if (signInEmail!=NULL && signInPassword!=NULL) {
-        
+    if (signInEmail.hasText &&signInPassword.hasText) {
         
         NSString *userEmail = signInEmail.text;
         NSString *userPassword = signInPassword.text;
         
         FireBaseAPIClass *APIRef   =   [[FireBaseAPIClass alloc]init];
-        [APIRef SignInMethod:userEmail pwd:userPassword];
+       isValid = [APIRef SignInMethod:userEmail pwd:userPassword];
+    
+    if (isValid) {
+        NSLog(@"success");
         
-     
     }
+    else NSLog(@"Invalid Credentials");
+  
+    }
+    else NSLog(@"Enter Email and password");
+     
+    
 }
 @end

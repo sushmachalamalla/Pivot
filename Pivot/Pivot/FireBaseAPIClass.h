@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <Firebase/Firebase.h>
+#define YES (BOOL)1
+#define NO (BOOL)0
 
 @interface FireBaseAPIClass : NSObject
 
 @property (strong,nonatomic) Firebase *connectionVariable;
 -(Firebase *)fireBaseReference;
--(void)SignInMethod:(NSString *)email pwd:(NSString *)password;
--(void)SignUpMethod:(NSString *)email pwd:(NSString *)password;
+//-(Firebase *)fireBaseDataBaseReference;
+-(BOOL)SignInMethod:(NSString *)email pwd:(NSString *)password;
+-(BOOL)SignUpMethod:(NSString *)email pwd:(NSString *)password;
+@property (nonatomic,assign) BOOL isAuthenticarionstatus;
 
-
+-(BOOL)AddPostMethod:(NSString *)from to:(NSString *)to contact:(NSString *)contact Details:(NSString *)Details;
 @end

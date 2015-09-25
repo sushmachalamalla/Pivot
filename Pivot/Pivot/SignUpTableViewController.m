@@ -48,10 +48,17 @@
     NSString *userEnteredEmail = signUpEmail.text;
     NSString *userEnteredPassword = signUpPassword.text;
     NSString *userEnteredPasswordReEntry = signUpPasswordReentry.text;
-
+     
+     BOOL isValid;
      
      FireBaseAPIClass *APIRef   =   [[FireBaseAPIClass alloc]init];
-     [APIRef SignUpMethod:userEnteredEmail pwd:userEnteredPassword];
+    isValid = [APIRef SignUpMethod:userEnteredEmail pwd:userEnteredPassword];
+     
+     if (isValid) {
+         NSLog(@"Registered Succefully");
+         
+     }
+     else NSLog(@"Invalid Registration");
      
      
     

@@ -10,8 +10,12 @@
 #import <Firebase/Firebase.h>
 #import "FireBaseAPIClass.h"
 
+
 @interface ViewController : UIViewController
 
+- (IBAction)SignUpButton:(id)sender;
+
+- (IBAction)SignInButton:(id)sender;
 
 
 @end

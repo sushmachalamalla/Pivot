@@ -10,13 +10,26 @@
 
 @implementation FireBaseAPIClass
 @synthesize connectionVariable;
+@synthesize isAuthenticarionstatus;
 
 
 -(Firebase *)fireBaseReference{
 Firebase *ref = [[Firebase alloc]initWithUrl:@"https://pivot.firebaseio.com"];
     return ref;
 }
--(void)SignUpMethod:(NSString *)email pwd:(NSString *)password{
+//********************FireBase DataBase**************************
+
+/*-(Firebase *)fireBaseDataBaseReference{
+    
+    Firebase *refDataBase = [[Firebase alloc]initWithUrl:@"https://pivot.firebaseio.com/POSTS"];
+    return refDataBase;
+}*/
+
+//***************************SignUp method*************************
+
+-(BOOL)SignUpMethod:(NSString *)email pwd:(NSString *)password{
+    
+     __block bool isValid=YES;
     
     Firebase *signUpRef =   [self fireBaseReference];
     
@@ -24,32 +37,69 @@ Firebase *ref = [[Firebase alloc]initWithUrl:@"https://pivot.firebaseio.com"];
                 withValueCompletionBlock:^(NSError *error, NSDictionary *result){
     if (error) {
         
+        isValid=NO;
     }
     else
     {
-        NSString *uid = [result objectForKey:@"uid"];
-        NSLog(@"Successfully created user account with uid: %@", uid);
-        
-    }
+          isValid=YES;
+           }
     
-}];
-
+   }];
+     return isValid;
     
 }
 
--(void)SignInMethod:(NSString *)email pwd:(NSString *)password{
+//***************************SignIn method*************************
+
+-(BOOL)SignInMethod:(NSString *)email pwd:(NSString *)password{
     
+    
+    __block bool isValid=YES;
     Firebase *signInRef =   [self fireBaseReference];
     
     [signInRef authUser:email password:password withCompletionBlock:^(NSError *error, FAuthData *authData)
      {
          if (error) {
-             // There was an error logging in to this account
-         } else {
-             // We are now logged in
-             NSLog(@"success");
-         }
+             
+             isValid=NO;
+                     }
+       else
+       {
+           isValid=YES;
+         
+       }
+         
+         
      }];
+       return isValid;
+    }
+//******************************ADDPOSTMETHOD**************************
+
+-(BOOL)AddPostMethod:(NSString *)from to:(NSString *)to contact:(NSString *)contact Details:(NSString *)Details
+{
+    Firebase *ref = [self fireBaseReference];
+    Firebase *dataBaseRef = [ref childByAppendingPath:@"POSTS"];
+    
+   //BOOL isFavourited = NO;
+    
+    NSDictionary *NewPost = @{
+                            @"FROM" : from,
+                            @"TO" : to,
+                            @"CONTACT" : contact,
+                            @"DETAILS" : Details,
+                           // @"isFavourited" : isFavourited
+                            //userid
+                            //offering/requesting
+                            
+                            };
+   
+    NSDictionary *posts = @{
+                            @"NEW POST":NewPost
+                            };
+    Firebase *autoId = [dataBaseRef childByAutoId];
+    [autoId updateChildValues:posts];
+    
+    return YES;
 }
 
 @end
